@@ -1,0 +1,56 @@
+header{
+	background-color: blue;
+}
+body{width: 100%; padding: 0; margin: 0;}
+body.theme1{background-color: #ff4d4d;}
+body.ash{background-color: #ccc;}
+.theme1 hr{ background-color: #23156C; height: 0.7px;}
+.purple{ background-color: #23156C; height: 0.7px;}
+.purple-border{ border-color: #23156C;}
+
+
+.intro-section {
+	background-image: url(../img/people_of_power.fw.png); 
+	background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;
+	height: 400px; 
+}
+.navbar.navbar-default.navbar-fixed-top ul.navbar-nav.nav li a{color: #fff;}
+.navbar.navbar-default.navbar-fixed-top ul.navbar-nav.nav li.active a{background-color: #fff; color: #23156C;}
+.navbar.navbar-default.navbar-fixed-top ul.navbar-nav.nav ul.dropdown-menu{background-color: #23156C;}
+.navbar.navbar-default.navbar-fixed-top ul.navbar-nav.nav ul.dropdown-menu a:hover{color: #23156C;}
+.intro-word{}
+.intro-word .vision-watchword-team{position: relative; width: 100% /*margin-right: 5%; margin-left: 5%;*/}
+.imageHolder img { width: 534px; height: 187px; margin-top: 9px; margin-left: 7px;}
+.intro-with-duction a { position: relative; text-align: center; color: #D82219; font-size: medium; font-weight: bold; text-transform: capitalize;}
+.intro-with-duction img { position: relative; margin: auto;  width:100%; }
+/* styling for POP tv*/
+.imageHolder img { width: 534px; height: 187px; margin-top: 9px; margin-left: 7px;}
+/*find a way to make the text respond to the web resize*/
+
+.ministry-branches img{float: left; clear: left;}
+.ministry-branches img p{float: left; clear: left;}
+.theme-plain .footer{ width: 100%; background-color: red; font-size: large; color: white}
+.footer{width: 100%; background-color: red; font-size: large; color: white; padding-top:3%; padding-bottom:3%;}
+.footer p{width: 100%;}
+/*the below is for swapping background color*/
+/*use flatuicolors to correct this later*/
+.wrapper{min-height: 700px; padding: 5%; background-color: #fff; margin: 5%;}
+.divided-section{min-height: 300px; color: #fff; padding: 0em;padding-top: 1em; font-family: ;}
+.event-section{min-height: 300px; color: #fff; padding: 0em; font-family: ;}
+.event-section .overlay{min-height: inherit; background-image: url(../img/coverB.fw.png); background-repeat: repeat; padding: 1em; margin:0em;}
+.divided-section-tall{min-height: 500px; color: #fff; padding: 0em;padding-top: 1em; font-family: ;}
+.divided-section-taller{min-height: 550px; color: #fff; padding: 0em;padding-top: 1em; font-family: ;}
+.wrapper form input{height: ;}
+.style-1{ background-color: #26C9FF;}
+.style-2{ background-color: #e74c3c;}
+.style-3{ background-color: #2ecc71;}
+.style-4{ background-color: #f39c12;}
+.p-header{font-size: large; font-weight: bold;}
+.p-header2{font-size: xx-large; font-weight: bold;}
+.p-normal{font-size: medium; font-weight: lighter;}
+.normal {color: #000;}
+.left-border{border-left-width:thin; border-left-style: solid; border-left-color: #ccc}
+.top-border{border-top-width:thin; border-top-style: solid; border-top-color: #ccc}
+.right-border{border-right-width:thin; border-right-style: solid; border-right-color: #ccc}
+.bottom-border{border-bottom-width:thin; border-bottom-style: solid; border-bottom-color:#23156C;}
+.video-layouts{background-color: #000; margin: 2%; padding: 0em;}
