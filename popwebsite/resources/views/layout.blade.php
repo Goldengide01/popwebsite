@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/lato/latofonts.css">
-	<link rel="stylesheet" type="text/css" href="assets/lato/latostyle.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/fontawesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/lato/latofonts.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/lato/latostyle.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/style.css') }}">
 	@section('additional_styles')
 	@show
 </head>
@@ -33,7 +33,7 @@
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="menu-bar-x">
-			      <ul class="nav navbar-nav navbar-center menu-list">\
+			      <ul class="nav navbar-nav navbar-center menu-list">
 			      <!-- @section('header_tabs') -->
                     <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -72,4 +72,10 @@
         <p class="text-center" >Follow us on </p>
     </div>
  </div>
+ @section('other_js_plugins')
+ @show
+ <script src="assets/scripts/jquery.min.js"></script>
+ <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
     @show

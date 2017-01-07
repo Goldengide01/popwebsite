@@ -19,10 +19,11 @@ class CreateEventsTable extends Migration
             $table->string('venue');
             $table->boolean('ticket');
             $table->Integer('no_of_ticket');
-            $table->string('officials');
+            $table->text('event_poster_url');
             $table->string('host');
             $table->string('guests');
-            $table->string('date_and_time');
+            $table->string('desc');
+            $table->timestamp('date_and_time');
             $table->timestamps();
         });
     }

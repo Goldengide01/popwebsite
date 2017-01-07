@@ -15,9 +15,9 @@ class AboutController extends Controller
     /*Add titles by their names*/
     public function add($title){
     	$about = new About();
-    	$about->title = mysqli_escape_string($title);
+    	$about->title = htmlspecialchars($title);
     	$link = implode("-", explode(" ", $title));
-    	$about->url = ($link);
+    	$about->url = strtolower($link);
     	$isSaved = $about->save();
     	if ($isSaved) {
     		return "Weldone Bravo".$title." added to the list";
@@ -28,7 +28,7 @@ class AboutController extends Controller
 
     public function editGet(){
     	$about = About::all();
-    	return view('admin.about')->with('about', $about);
+    	return view('admin.edits.about')->with('about', $about);
 
     }
 
@@ -42,6 +42,9 @@ class AboutController extends Controller
     	if ($isSaved) {
     		return "Weldone Bravo title with ".$id." editted on the list";
     	}
+        else {
+            return "What!!!!!";
+        }
 
     }
 

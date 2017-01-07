@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>CHURCH</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
 <div class="container-fluid" style="margin: 0px; padding: 0px; border-radius: 0px;">
-    @extend('layouts')
-    @session('content')
+    @extends('layout')
+    @section('content')
     <div class="wrapper">
         <div class="style-1 divided-section">
             <p class="text-center p-header">THE INTELLECTUALS</p>

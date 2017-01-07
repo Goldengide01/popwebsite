@@ -29,11 +29,11 @@
                     </div>
                     
                 </div>
-                <div class="audio" class="col-xs-12">
+                <div id="audio" class="col-xs-12">
                 @foreach ($audios as $audio)
                     <div class="col-xs-12" style="background-color: ;">
                         <audio controls style="width: 100%;">
-                          <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                          <source src="horse.ogg" type="audio/ogg">
                           <source src="{{$audio->url}}" type="audio/mpeg">
                           Your browser does not support the audio element.
                         </audio>

@@ -62,7 +62,7 @@
  		</div>
  		<!-- <div class="" style="float: left; ">hjhj</div> -->
  	</div>
-    <div class="wrapper">
+    <div class="wrapper style-2">
      	<div class="main-content">
      		<div class="container-fluid" style="margin: 0;padding: 0;">
     	 		<div class="intro-section " style="padding-top: 10%; padding-left: 3%; padding-right: 3%">
@@ -74,7 +74,7 @@
     	 		<div class="intro-word">
     	 			<p style="font-size: larger; text-align: center;"><span style="font-size:x-large; font-weight:bolder;">PEOPLE OF POWER MINISTRY INCORPORATED </span> a.k.a. P. O. P. is a non-denominational, Christian elite squad which is one of the Heavens rescues missions to save and train humanity for the coming exploit. Raising people of standard, purpose and deep spiritual communion with God through the Holy Spirit; establishing God’s righteousness. Learn More
                     </p>
-                    <hr style="margin:45px 0 35px;" />
+                    <span class="line bottom-border purple-border col-xs-12" style="margin:45px 0 35px;"></span>
 
                     <div class="container vision-watchword-team">
                         <div class="row">
@@ -84,13 +84,15 @@
                                 <a href="/" class="col-xs-12"> OUR VISION</a> 
                             </div>
                             <div class="col-xs-6 text-center" style="font-family: LatoWebBold; padding-left: 2%; font-size: 150%;">
-                                “I am the man for the hour<br>
-                                The reason for the season<br>
-                                Created to make a change<br>
-                                Destined to succeed<br>
-                                Success is my character<br>
-                                Righteousness is my nature<br>
-                                Success is in me”
+                                <!-- <blockquote> -->
+                                    “I am the man for the hour<br>
+                                    The reason for the season<br>
+                                    Created to make a change<br>
+                                    Destined to succeed<br>
+                                    Success is my character<br>
+                                    Righteousness is my nature<br>
+                                    Success is in me”
+                                <!-- </blockquote> -->
                             </div>
                             <div class="col-xs-3 intro-with-duction">
                                 <img src="assets/img/team.fw.png" class="img-responsive">
@@ -98,29 +100,28 @@
                                 <a href="/" class="col-xs-12 text-center"> Meet Our Team</a> 
                             </div>
                         </div>
-                        <hr style="margin:45px 0 35px">
+                        <span class="line bottom-border purple-border col-xs-12" style="margin:45px 0 35px;"></span>
                     	<p style="text-align: center; width: 100%;">MINISTRY HANDS</p>
                     	<div class="ministry-branches">
-                    		<div class="ministry-saviour col-lg-4 col-md-5 col-xs-offset-1 col-sm-5 col-xs-11">
-
+                    		<div class="ministry-saviour col-md-5 col-sm-5 col-xs-11">
                     			<p>
                     				<img src="assets/img/saviours.fw.png" class="img-responsive">
                     				The need for saviors to arise from Zion (the city of Justice, Peace and Equity) and go to the land of Edom (the city of Curse, Injustice and Inequality) to teach the principle of Zion to the people of Edom for the good of man-kind cannot be over emphasized.... <a href="#"> See more</a>
                     			</p>
                     		</div>
-                    		<div class="ministry-wonders col-lg-4 col-md-5 col-xs-offset-1 col-sm-5 col-xs-11">
+                    		<div class="ministry-wonders col-md-5 col-xs-offset-1 col-sm-5 col-xs-11">
                     			<p>
                     				<img src="assets/img/sons_of_wonders.fw.png" class="img-responsive">
                     				The need for saviors to arise from Zion (the city of Justice, Peace and Equity) and go to the land of Edom (the city of Curse, Injustice and Inequality) to teach the principle of Zion to the people of Edom for the good of man-kind cannot be over emphasized.... <a href="#"> See more</a>
                     			</p>
                     		</div>
-                    		<div class="ministry-intellectuals col-lg-4 col-md-5 col-xs-offset-1 col-sm-5 col-xs-11">
+                    		<div class="ministry-intellectuals col-md-5 col-sm-5 col-xs-11">
                     			<p>
                     				<img src="assets/img/intellectuals.fw.png" class="img-responsive">
                     				The need for saviors to arise from Zion (the city of Justice, Peace and Equity) and go to the land of Edom (the city of Curse, Injustice and Inequality) to teach the principle of Zion to the people of Edom for the good of man-kind cannot be over emphasized.... <a href="#"> See more</a>
                     			</p>
                     		</div>
-                    		<div class="ministry-popss col-lg-4 col-md-5 col-xs-offset-1 col-sm-5 col-xs-11">
+                    		<div class="ministry-popss col-md-5 col-xs-offset-1 col-sm-5 col-xs-11">
                     			<p>
                     				<img src="assets/img/saviours.fw.png" class="img-responsive">
                     				The need for saviors to arise from Zion (the city of Justice, Peace and Equity) and go to the land of Edom (the city of Curse, Injustice and Inequality) to teach the principle of Zion to the people of Edom for the good of man-kind cannot be over emphasized.... <a href="#"> See more</a>
@@ -131,30 +132,30 @@
                     <div class="calendar">
                         <div class="countdown">
                             <span class="line bottom-border purple-border col-sm-4 hidden-xs">.</span>   
-                            <span id="clock" class=" col-sm-4 col-xs-12 text-center" style="font-family: LatoWeb; font-size: 250%; color: #e74c3c;"></span>   
+                            <span id="clock" class=" col-sm-4 col-xs-12 text-center" style="font-family: LatoWeb; font-size: 250%; color: #fff;"></span>   
                             <span class="line bottom-border purple-border col-sm-4 hidden-xs">.</span>   
-                        <hr style="margin:45px 0 35px;" class="visible-xs">
                         </div>
-                        <!-- <hr style="margin:45px 0 35px;" class="purple"> -->
                         <div class="program">
                             <div class="details col-lg-8 col-sm-8 col-xs-7">
-                    			<div class="upcoming col-lg-4 col-xs-6">UPCOMING EVENT:</div>
-                    			<div class="col-lg-8 col-xs-6">
-    	                			<div class="event-name-and-time col-lg-6 col-xs-12">POP Workshop-10:00am</div>
-    	                			<div class="view-full-detail col-lg-6 col-xs-12">View Full detail</div>
-                    			</div>
-                    		</div>
-                    		<div class="socials col-lg-3 col-sm-3 col-xs-offset-1 col-xs-4">
-                    			<span class="text-center text-bold"><b>Share it with others</b></span><br>
-                    			<span class="icon-facebook"></span>
-                    			<span class="icon-twitter"></span>
-                    			<span class="icon-google-plus"></span>
-                    		</div>
-                    	</div>
+                                <div class="upcoming col-lg-4 col-xs-6">UPCOMING EVENT:</div>
+                                <div class="col-lg-8 col-xs-6">
+                                    <div class="event-name-and-time col-lg-6 col-xs-12">POP Workshop-10:00am</div>
+                                    <div class="view-full-detail col-lg-6 col-xs-12">View Full detail</div>
+                                </div>
+                            </div>
+                            <div class="socials col-lg-3 col-sm-3 col-xs-offset-1 col-xs-4">
+                                <span class="text-center text-bold"><b>Share it with others</b></span><br>
+                                <span class="icon-facebook"></span>
+                                <span class="icon-twitter"></span>
+                                <span class="icon-google-plus"></span>
+                            </div>
+                        </div>
+                        <span class="line bottom-border purple-border col-sm-12 hidden-xs" style="margin:45px 0 35px;">.</span>   
                     </div>
-    	 		</div>
-     		</div>
-     		<hr style="margin:45px 0 35px;" class="purple">
+                </div>
+            </div>
+            <!-- <span class="line bottom-border purple-border col-sm-4 hidden-xs" style="margin:45px 0 35px;">.</span>    -->
+     		<!-- <hr style="margin:45px 0 35px;" class="purple"> -->
 
      	</div>
         
@@ -167,7 +168,7 @@
  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
  <script src="assets/countdown/jquery.countdown.min.js"></script>
  <script type="text/javascript">
-     $('#clock').countdown('2017/01/02 14:34:56')
+     $('#clock').countdown('2018/01/10 14:34:56')
 .on('update.countdown', function(event) {
   var format = '%Hh:%Mm:%Ss';
   if(event.offset.totalDays > 0) {

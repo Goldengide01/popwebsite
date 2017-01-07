@@ -37,9 +37,3 @@
 		</div>
 	</div>
 	@stop
-	@section('footer')
-	<script src="assets/scripts/jquery.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
-	@stop

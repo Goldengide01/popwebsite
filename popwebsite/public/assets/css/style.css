@@ -12,7 +12,7 @@ body.ash{background-color: #ccc;}
 .intro-section {
 	background-image: url(../img/people_of_power.fw.png); 
 	background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;
-	height: 400px; 
+	height: 400px; background-attachment: fixed;
 }
 .navbar.navbar-default.navbar-fixed-top ul.navbar-nav.nav li a{color: #fff;}
 .navbar.navbar-default.navbar-fixed-top ul.navbar-nav.nav li.active a{background-color: #fff; color: #23156C;}

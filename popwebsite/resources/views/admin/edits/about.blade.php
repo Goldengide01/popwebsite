@@ -14,28 +14,33 @@
     <h1 class="text-center">Welcome to Admin Page This is where you decide what is going to be on your page</h1>
     <form class="form-horizontal col-md-6 col-xs-12" id="0" >
         <div class="form-group">
-            <label for="WIP" class="col-sm-2 control-label">{!! $about[0]->title !!}</label>
+            <label for="desc" class="col-sm-2 control-label">{!! $about[0]->title !!}</label>
             <div class="col-xs-10">
-                <textarea class="form-control" rows="5" name="wip" id="0">{!! $about[0]->desc !!}</textarea>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <textarea class="form-control" rows="5" name="desc">{!! $about[0]->desc !!}</textarea>
             </div>
       </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default">Update</button>
-            <span class="text-success report"><i class="icon-spinner"></i>updated.....</span>
+            <span class="report"><i class="icon-spinner"></i></span>
             </div>
         </div>
     </form>
     <form class="form-horizontal col-md-6 col-xs-12" id="1" >
+    <!-- action="{{url('/admin/about/update')}}" method="post" -->
         <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Our Vision</label>
             <div class="col-xs-10">
-                <textarea class="form-control" rows="5"></textarea>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <textarea class="form-control" rows="5" name="desc"></textarea>
+                <!-- <input type="hidden" name="id" value="1"> -->
             </div>
       </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default">Update</button>
+            <span class="report"><i class="icon-spinner"></i></span>
             </div>
         </div>
     </form>
@@ -43,12 +48,14 @@
         <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Our Mission</label>
             <div class="col-xs-10">
-                <textarea class="form-control" rows="5"></textarea>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <textarea class="form-control" rows="5" name="desc"></textarea>
             </div>
       </div>
         <div class="form-group" >
             <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default">Update</button>
+            <span class="report"><i class="icon-spinner"></i></span>
             </div>
         </div>
     </form>
@@ -56,12 +63,14 @@
         <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Our Story</label>
             <div class="col-xs-10">
-                <textarea class="form-control" rows="5"></textarea>
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <textarea class="form-control" rows="5" name="desc"></textarea>
             </div>
       </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default">Update</button>
+            <span class="report"><i class="icon-spinner"></i></span>
             </div>
         </div>
     </form>
@@ -72,23 +81,35 @@
  $(document).ready(function() {
      $('form').submit(function() {
         var getId = "#"+$(this).attr('id');
+        var report = getId + " .report";
         var actual = getId + " textarea";
-        actuali = actual.toString();
-        url =  "{{ url('/admin/about/update') }}";
-        var desc = $(actuali).val();
+        var hidden = getId + " input[type='hidden']";
+        // var url =  "{{ url('/admin/about/update') }}";
+        var url =  "http://localhost/popwebsite/public/admin/about/update";
+        var desc = $(actual).val();
+        var token = $(hidden).val();
         var id = $(this).attr('id');
-        alert(desc);
-        // $.ajax({
-        //     type: 'POST',
-        //     url: '/admin/about/update',
-        //     data: {
-        //         desc: desc, id: id
-        //     },
-        //     success: function(data) {
-        //         $('.report').addClass(text-success).html("updated....");
-        //         alert('Load was performed.');
-        //     }
-        // });
+        // alert(token);
+        $.ajax({
+            type: 'POST',
+            async: true,
+            url: "http://localhost/popwebsite/public/admin/about/update",
+            data: {
+                desc: desc, id: id, _token: token
+            },
+            dataType: 'json',
+            success: function(data) {
+                $(report).addClass('text-success').html("updated....");
+                console.log(data);
+            },
+            beforeSend: function() {
+                $(report).addClass('text-info').html("updating...")
+            },
+            error: function() {
+                $(report).addClass('text-danger').html("update not successful");
+            }
+        });
+        // console.log(data);
         return false;
      });
 

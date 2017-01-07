@@ -37,7 +37,7 @@ class ContactController extends Controller
     }
     public function editGet($id){
         $contact = Contact::find($id)->first(); 
-        return view('admin.contact')->with('contact', $contact);
+        return view('admin.save.contact')->with('contact', $contact);
     }
     public function editPost(Request $request){
         $id = $request['id'];

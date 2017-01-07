@@ -23,7 +23,7 @@ class ConnectController extends Controller
     }
 
 
-    public function edit(Request request, $id){
+    public function edit(Request $request, $id){
     	$connect = Connect::find($id);
     	// $connect->desc = $desc;
     	$connect->desc = $request['desc'];

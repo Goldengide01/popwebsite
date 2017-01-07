@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>POP|Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset("assets/bootstrap/css/bootstrap.min.css") }}">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset("assets/css/style.css") }}">
-</head>
-<body>
+@extends('layouts.app')
+@section('content')
 <div class="container" style="margin: 0px; padding: 0px; border-radius: 0px;">
     <h1 class="text-center">Welcome to Admin Page This is where you decide what is going to be on your page</h1>
-    <form class="form-horizontal col-md-8 col-xs-12" method="post" action="{{ url('/admin/media/add') }}" enctype="multipart/form-data">
+    <form class="form-horizontal col-md-8 col-xs-12" method="post" action="{{ url('/admin/media/add') }}">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-        <input type="hidden" name="mediaCode" value="0">
+        <input type="hidden" name="mediaCode" value="1">
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Title</label>
             <div class="col-xs-10">
@@ -22,15 +12,15 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="email" class="col-sm-2 control-label">Upload Picture here</label>
+            <label for="phone" class="col-sm-2 control-label">Audio file Address here</label>
             <div class="col-xs-10">
-                <input type="file" name="photo" class="form-control">
+                <input type="text" name="video" class="form-control" value="">
             </div>
         </div>
         <div class="form-group">
             <label for="phone" class="col-sm-2 control-label">Event name</label>
             <div class="col-xs-10">
-                <input type="text" name="event_name" class="form-control" value="">
+                <input type="text" name="phone" class="form-control" value="">
             </div>
         </div>
         <div class="form-group">
@@ -52,8 +42,4 @@
         </div>
     </form>
 </div>
- <script src="{{ URL::asset("assets/scripts/jquery.min.js") }}"></script>
- <script src="{{ URL::asset("assets/bootstrap/js/bootstrap.min.js") }}"></script>
- <script type="text/javascript">
-</body>
-</html>
+@stop

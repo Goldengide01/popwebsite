@@ -1,47 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>POP|Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset("assets/bootstrap/css/bootstrap.min.css") }}">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset("assets/css/style.css") }}">
-</head>
-<body>
+@extends('layouts.app')
+@section('content')
 <div class="container" style="margin: 0px; padding: 0px; border-radius: 0px;">
     <h1 class="text-center">Welcome to Admin Page This is where you decide what is going to be on your page</h1>
-    <form class="form-horizontal col-md-8 col-xs-12" method="post" action="{{ url('/admin/contact/update') }}">
+    <form class="form-horizontal col-md-8 col-xs-12" method="post" action="{{ url('/admin/media/edit') }}">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="id" value="{{$media->id}}">
         <input type="hidden" name="mediaCode" value="2">
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">Title</label>
             <div class="col-xs-10">
-                <input type="text" name="title" class="form-control" value="">
+                <input type="text" name="title" class="form-control" value="{{$media->title}}">
             </div>
         </div>
         <div class="form-group">
-            <label for="phone" class="col-sm-2 control-label">Youtube Video Address here</label>
+            <label for="url" class="col-sm-2 control-label">Youtube Video Address here</label>
             <div class="col-xs-10">
-                <input type="text" name="video" class="form-control" value="">
+                <input type="text" name="url" class="form-control" value="{{$media->url}}">
             </div>
         </div>
         <div class="form-group">
-            <label for="phone" class="col-sm-2 control-label">Event name</label>
+            <label for="event_name" class="col-sm-2 control-label">Event name</label>
             <div class="col-xs-10">
-                <input type="text" name="phone" class="form-control" value="">
+                <input type="text" name="event_name" class="form-control" value="{{$media->event_name}}">
             </div>
         </div>
         <div class="form-group">
             <label for="WIP" class="col-sm-2 control-label">Venue</label>
             <div class="col-xs-10">
-                <textarea class="form-control" rows="5" name="desc" ></textarea>
+                <textarea class="form-control" rows="5" name="desc" >{{$media->desc}}</textarea>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit form-control" class="btn btn-default">Add Picture</button>
+                <button type="submit form-control" class="btn btn-default">Update</button>
                 @if (session('alert-success'))
                 <span class="text-success"><i class="icon-spinner"></i> {{ session('alert-success')}}</span>
                 @endif
@@ -52,8 +43,4 @@
         </div>
     </form>
 </div>
- <script src="{{ URL::asset("assets/scripts/jquery.min.js") }}"></script>
- <script src="{{ URL::asset("assets/bootstrap/js/bootstrap.min.js") }}"></script>
- <script type="text/javascript">
-</body>
-</html>
+@stop
