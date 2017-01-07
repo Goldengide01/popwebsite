@@ -48,7 +48,7 @@
 						<a class="text-primary" href="{{url('/member/edit/'.$member->id)}}"><i class="icon-eye-open"></i></a> 
 						<a class="text-warning" href="{{url('/member/view/'.$member->id)}}"><i class="icon-edit"> </i></a> 
 						<a class="text-danger" href="{{url('/member/delete/'.$member->id)}}"><i class="icon-remove"></i></a>
-						</td>
+					</td>
 				</tr>
 				@endforeach
 			</tbody>

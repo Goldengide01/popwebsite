@@ -1,5 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.custom')
 
+@section('menu')
+@stop
 @section('content')
 <div class="container">
     <div class="row">
